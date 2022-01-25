@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: false })); app.use(express.json());
 const db = mysql.createConnection(
     {
         host: 'localhost',
-        user: user,
+        user: "root",
         password: pw,
         database: 'election'
     },
