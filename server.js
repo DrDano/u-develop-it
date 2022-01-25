@@ -24,6 +24,10 @@ app.get('/', (req, res) => {
     });
 });
 
+db.query(`SELECT * FROM candidates`, (err, rows) => {
+    console.log(rows);
+});
+
 // default response for any other request
 app.use((req, res) => {
     res.status(404).end();
