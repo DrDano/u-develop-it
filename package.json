@@ -1,28 +1,26 @@
 {
-  "name": "u-develop-it",
+  "name": "hacker-news-clone",
   "version": "1.0.0",
-  "description": "A voting application with data storage and access built in.",
-  "main": "index.js",
+  "description": "",
+  "main": "server.js",
   "scripts": {
     "test": "jest",
-    "start": "node server.js"
+    "seeds": "node seeds/index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DrDano/u-develop-it.git"
-  },
-  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/DrDano/u-develop-it/issues"
-  },
-  "homepage": "https://github.com/DrDano/u-develop-it#readme",
   "dependencies": {
-    "express": "^4.17.2",
-    "mysql2": "^2.3.3"
+    "bcrypt": "^4.0.1",
+    "connect-session-sequelize": "^6.1.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "express-session": "^1.17.0",
+    "handlebars": "^4.7.3",
+    "mysql2": "^2.1.0",
+    "sequelize": "^5.21.5"
   },
   "devDependencies": {
-    "jest": "^27.4.7"
+    "jest": "^25.1.0"
   }
 }
